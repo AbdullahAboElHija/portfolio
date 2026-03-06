@@ -387,8 +387,6 @@ ul {
 .hero-image {
     width: 100%;
     border-radius: 4px;
-    filter: grayscale(100%) contrast(1) sepia(100%) hue-rotate(150deg) saturate(300%) brightness(0.7);
-    mix-blend-mode: multiply;
     transition: var(--transition);
     position: relative;
     z-index: 5;
@@ -404,30 +402,8 @@ ul {
     z-index: 1;
 }
 
-.hero-image-wrapper:hover .hero-image {
-    filter: none;
-    mix-blend-mode: normal;
-}
-
 .hero-image-wrapper:hover .image-border {
     transform: translate(15px, 15px);
-}
-
-.hero-image-wrapper::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: var(--cta);
-    border-radius: 4px;
-    mix-blend-mode: screen;
-    opacity: 0.3;
-    transition: var(--transition);
-    z-index: 6;
-    pointer-events: none;
-}
-
-.hero-image-wrapper:hover::after {
-    opacity: 0;
 }
 
 /* About Section */
